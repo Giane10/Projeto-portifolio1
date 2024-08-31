@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/*https://colorhunt.co/*/
+
+/*reset pagina*/
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*muda o corpo de todas as paginas*/
+body {
+    box-sizing: border-box;
+    background-color: #F5EFE6;
+    color: #987070;
+}
+
+.cabecalho{
+    padding: 2% 0% 2% 15%;
+    background-color: rgb(240, 196, 168);
+    flex-wrap: wrap;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 90px;
+    /*ajustar em telas menores*/
+    flex-wrap: wrap; 
+}
+
+.cabecalho__menu__link{
+   font-family: 'montserrat', sans-serif;
+   font-size: 25px;
+   font-weight: 600;
+   color: #987070;
+   margin: 0 10px;
+   text-decoration: none;
+}
+/*Muda o mouse ao passar por cima do link*/
+.cabecalho__menu__link:hover{
+    cursor: pointer;
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+ 
+.apresentacao__conteudo{
+    width: auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+    
+}
+/*destaca uma parte do texto*/
+.titulo__destaque{
+    color: brown;
+    font-weight: 400; /*peso da fonte*/
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 18px;
+    font-family: 'montserrat', sans-serif;    
+}
+/*Link Linkedin e GitHub e Ícones*/
+/*estilo cursor e botoes ao passar o mouse sobre os botoes, efeito Hover*/
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+
+
+/*Centralizando ícones e textos nos botões*/
+.apresentacao__links__link{
+    display: flex;
+    justify-content: center; /*Alinhar elementos*/
+    border: 2px dotted brown;
+    gap: 16px; /*Espaçamento entre ícones e textos*/
+    /*border: 2px solid #22D4FD;*/
+    width: 378px;
+    max-width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 15px 0;
+    text-decoration: none;
+    color: brown;
+    font-family: 'montserrat', sans-serif;
+}
+/*estilo cursor e botoes ao passar o mouse sobre os botoes, efeito Hover*/
+.apresentacao__links__link:hover {
+    cursor: pointer;
+    background-color: rgb(240, 196, 168);
+    padding: 3%
+}
+
+/*imagem Giane*/
+.imagem__principal{
+    max-width: 400px;
+    max-height: 700px;
+    width: auto;
+    height: auto;
+    border: rgb(240, 196, 168) double 0.5rem;
+    border-radius: 60px;
+}
+
+.rodape{
+    color: brown;
+    background-color: rgb(240, 196, 168); 
+    padding: 15px;
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400; 
+}
+
+/* pagina Contato*/
+.contato__{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    font-family: 'montserrat', sans-serif;
+  
+}
+
+.botao__enviar:hover{
+    cursor: pointer;
+    background-color: rgb(240, 196, 168);
+    padding: 3%
+}
+
+.botao__enviar{
+    border: 1px solid brown;
+    border: 2px dotted brown;
+    border-radius: 4px;
+    padding: 3px ;
+    color: brown;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F5EFE6;   
+}
+
+/* Media Queries para responsividade 
+ajustar o layout em diferentes larguras de tela*/
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 2% 5%;
+    }
+
+    .cabecalho__menu {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .apresentacao {
+        padding: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .apresentacao__links__link {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho__menu__link {
+        font-size: 20px;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 24px;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 14px;
+    }
+
+    .apresentacao__links__link {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+}
