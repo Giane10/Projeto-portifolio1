@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./styles/style.css" >
+</head>
+<body>
+    <!--Menu de navegação-->
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link"href="index.html">Sobre Mim</a> 
+           <a class="cabecalho__menu__link" href="formacao.html">Formação</a>
+           <a class="cabecalho__menu__link" href="portifolio.html">Potifólio</a>
+           <a class="cabecalho__menu__link" href="contato.html">Contato</a>
+        </nav>   
+    </header>
+    <!--titulo da página formulário-->
+    <form class="apresentacao">
+        <h1 class="apresentacao__conteudo__titulo">Formulário para contato:</h1>
+        <!--Formulário de contato-->
+        <table class="contato__">
+            <tr>
+                <th><label for="nome">Nome:</label></th>
+                <td><input type="text" name="nome" id="nome" autocomplete="name"></td>  
+            </tr>
+            <tr>
+                <th><label for="email">E-mail:</label></th>
+                <td><input type="email" name="email" id="email" autocomplete="email"></td>  
+            </tr>
+            <tr>
+                <th><label for="msg">Digite sua Mensagem:</label></th>
+                <td><textarea name="msg" id="msg" rows="5" cols="40" autocomplete="off"></textarea></td>
+            </tr>
+            <!--Botão do formulário-->
+            <tr>
+                <td></td>
+                <td><button type="submit" class="botao__enviar">Enviar</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Giane Costa</p>
+    </footer>
+</body>
+</html>
